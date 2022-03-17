@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Password Generator | Solo Project</title>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/e1dcc1d28d.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Karla:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="first-fold"> 
+            <h1>Generate a <span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <p class="length" id="pw-length">Password Length: 12</p>
+            <input class="slider" type="range" id="pass-length" value="12" min="4" max="20">
+            <br>
+            <button class="gen-pass-btn" onclick="generatePass()"><i class="fa-solid fa-bolt"></i> Generate Passwords</button>
+        </div>
+        <div class="second-fold">
+            <div class="pass-box box-1">
+                <input type="text" id="pass-box1" placeholder="…">
+                <button class="copy-btn" onclick="copyPassword(pwBox1)"><i class="fa-solid fa-copy"></i></button>
+            </div>
+            <div class="pass-box box-1">
+                <input type="text" id="pass-box2" placeholder="…">
+                <button class="copy-btn" onclick="copyPassword(pwBox2)"><i class="fa-solid fa-copy"></i></button>
+            </div>
+            <div class="pass-box box-1">
+                <input type="text" id="pass-box3" placeholder="…">
+                <button class="copy-btn" onclick="copyPassword(pwBox3)"><i class="fa-solid fa-copy"></i></button>
+            </div>
+            <div class="pass-box box-1">
+                <input type="text" id="pass-box4" placeholder="…">
+                <button class="copy-btn" onclick="copyPassword(pwBox4)"><i class="fa-solid fa-copy"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
