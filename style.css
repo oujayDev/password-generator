@@ -147,7 +147,7 @@ input[type="text"]:focus {
     color: white;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 426px) {
     .container {
         margin-top: 0;
         max-height: fit-content;
