@@ -47,9 +47,7 @@ p {
     max-height: 650px;
     margin-inline: auto;
     margin-top: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-inline: 2rem; 
+    padding: 2rem;
 }
 
 .first-fold {
@@ -70,8 +68,6 @@ p {
     border-radius: 1rem;
     background: linear-gradient(to right, #10B981 0%, #10B981 50%, #0C4A6E 50%, #0C4A6E 100%);
     outline: none;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
 }
 
 .slider::-webkit-slider-thumb {
@@ -120,7 +116,7 @@ p {
 input[type="text"] {
     height: 2rem;
     border-radius: 5px;
-    border: 0;
+    border: none;
     background: #273549;
     color: #10B981;
     font-family: 'Inter', sans-serif;
@@ -129,7 +125,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    outline: 0;
+    outline: none;
 }
 
 .copy-btn {
@@ -147,9 +143,9 @@ input[type="text"]:focus {
     color: white;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 35em) {
     .container {
-        margin-top: 0;
+        margin-top: 3rem;
         max-height: fit-content;
 
     }
